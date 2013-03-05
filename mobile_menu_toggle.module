@@ -1,0 +1,27 @@
+<?php
+
+function mobile_menu_toggle_block_info() {
+  $blocks['mobile_menu_toggle'] = array(
+    'info' => t('Mobile Menu Toggle'),
+  );
+
+  return $blocks;
+}
+
+function mobile_menu_toggle_block_view($delta = '') {
+  switch ($delta) {
+    case 'mobile_menu_toggle':
+      $block['content'] = theme('mobile_menu_toggle');
+      drupal_add_js(drupal_get_path('module', 'mobile_menu_toggle') . '/mobile_menu_toggle.js');
+    break;
+  };
+  return $block;
+}
+
+function mobile_menu_toggle_theme() {
+  return array(
+    'mobile_menu_toggle' => array(
+      'template' => 'mobile_menu_toggle',
+    ),
+  );
+}

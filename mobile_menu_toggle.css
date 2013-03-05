@@ -1,0 +1,16 @@
+/****************************************
+//   MOBILE
+****************************************/
+@media all and (max-width: 740px) {
+  #zone-menu {
+    display: none;
+  }
+}
+/****************************************
+//   TABLET + DESKTOP
+****************************************/
+@media all and (min-width: 740px) {
+  #zone-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,6 @@
+name = Mobile Menu Toggle
+description = Uses jQuery slideToggle() to hide/show menu zone.
+
+core = 7.x
+
+stylesheets[screen][] = mobile_menu_toggle.css
